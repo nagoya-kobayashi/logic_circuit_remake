@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="./jquery-1.7.1.min.js"></script>
+    <script src="./full-adder.js"></script>
+</head>
+<body>
+    <h1>【Lv.2】
+    ３つの２進数の足し算を行う回路を作ってみよう。<br>
+    </h1>
+    ・右側のように、入力に応じて２進数の足し算の結果が出力されるように論理ゲートの組み合わせを切り替えてみよう。<br>
+    ・すべての入力パターンで、意図した出力が出るようにできたら成功！次のレベルに進もう！<br>
+    
+    <canvas id="a_canvas" width=350 height=600 style="background-color:gray;">
+    </canvas>
+    <img src="./round5.png" height=600 >
+    <hr>
+    <input id="check-button" type="button" value="チェック" style="font-size:3em;"/>
+    <hr>
+    <font color="red">ヒント</font><br>
+    <font color="purple">
+    ①【入力Ａ】＋【入力Ｂ】の"足し算"をする。<br>
+    ②その【結果の１桁目のビット】と【入力Ｃ】を"足し算"をする。<br>
+    ※"足し算"はLv1で組んだように、ANDとXORで作れる。<br>
+    ③桁上がりとなる【出力Ｃ】は"どちらか"の足し算で発生していれば１になる。<br>
+    </font>
+    <hr>
+    <a href="./round4.html">まえへ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./round6.html">つぎへ</a>
+</body>
+</html>

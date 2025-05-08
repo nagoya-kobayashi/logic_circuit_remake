@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="./jquery-1.7.1.min.js"></script>
+    <script src="./full-adder2.js"></script>
+</head>
+<body>
+    <h1>【Lv.3】
+    ２進数２桁の足し算を行う回路を作ってみよう。<br>
+    </h1>
+    ・右側のように、入力に応じて２進数の足し算の結果が出力されるように論理ゲートの組み合わせを切り替えてみよう。<br>
+    ・すべての入力パターンで、意図した出力が出るようにできたら成功！CPU発明家の称号をGETだ！<br>
+    <canvas id="a_canvas" width=350 height=600 style="background-color:gray;">
+    </canvas>
+    <img src="./round6.png" height=600 >
+    <hr>
+    <input id="check-button" type="button" value="チェック" style="font-size:3em;"/>
+    <hr>
+    <font color="red">ヒント</font><br>
+    <font color="purple">
+    (1)出力S0の計算<br>
+    　まずは【入力X0】＋【入力Y0】の"足し算"をする部分を作ろう。<br>
+    　※２ビットの"足し算"はLv1で組んだように、ANDとXORで作れるね。<br>
+    (2)出力S1の計算<br>
+    　その【結果の桁上がりのビット】と【入力X1】と【入力Y1】を"足し算"をする部分を作ろう。<br>
+    　※３ビットの"足し算"はLv2で組んだように作れるね。<br>
+    　　（①まずは【入力X1】＋【入力Y1】の"足し算"をする部分を作ろう。<br>
+    　　　②その【結果の１桁目のビット】と【(1)の桁上がり】を"足し算"をする部分を作ろう。<br>
+    　　　※"足し算"はLv1で組んだように、ANDとXORで作れるね。<br>
+    　　　③桁上がりとなる【出力Ｃ】は"どちらか"の足し算で発生していれば１になるから、残りの部分は・・・）<br>
+
+    <hr>
+    <a href="./round5.html">まえへ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./round7.html">つぎへ</a>
+</body>
+</html>
